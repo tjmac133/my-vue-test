@@ -13,6 +13,7 @@
 
 3. 项目创建完成后，启动项目
 > $ npm run dev
+
 ## 没有特殊情况，项目可以正常运行
 4. 安装项目基础包
 > $ npm install vue-router --save （路由管理模块）
