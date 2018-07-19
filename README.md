@@ -19,3 +19,5 @@
 > $ npm install vue-router --save （路由管理模块）
 > $ npm install vuex --save （状态管理模块）
 > $ npm install vue-resource --save （网路请求模块）
+
+# 实现了简单路由
