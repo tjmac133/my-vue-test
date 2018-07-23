@@ -17,7 +17,31 @@
 ## 没有特殊情况，项目可以正常运行
 4. 安装项目基础包
 > $ npm install vue-router --save （路由管理模块）
+
 > $ npm install vuex --save （状态管理模块）
+
 > $ npm install vue-resource --save （网路请求模块）
 
+
 # 实现了简单路由
+
+# select change 获取传中的值和内容
+>
+ npm install jquery --save
+
+>
+ import $ from 'jquery'
+>
+   <select @change="updateUserSex">
+      <option :value="null"></option>
+      <template v-for="option in user.options">
+        <option :value="option.value" >{{ option.label }}</option>
+      </template>
+    </select>
+>
+ updateUserSex:function({ type, target }){
+
+            console.log(target.value);
+            console.log($(target).find("option:selected").text());
+           this.$emit("changeUserSex",target.value);
+        }
